@@ -6,6 +6,7 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
+  background-color: transparent
   ${mobile({ height: "50px" })}
 `;
 
@@ -49,7 +50,8 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  ${mobile({ fontSize: "24px" })}
+  font-size: 15px;
+  ${mobile({ fontSize: "10px" })}
 `;
 const Right = styled.div`
   flex: 1;
@@ -71,14 +73,14 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
+          <Language>MARKET</Language>
           <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LAMA.</Logo>
+          <Logo>ALVINE ONLINE MARKET</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>

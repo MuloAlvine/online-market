@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import Footer from "../components/Footer";
 
 const Container = styled.div`
   width: 100vw;
@@ -8,7 +9,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    url("https://images.pexels.com/photos/2249249/pexels-photo-2249249.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
       center;
   background-size: cover;
   display: flex;
@@ -17,10 +18,14 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 40%;
+  width: 30%;
   padding: 20px;
-  background-color: white;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   ${mobile({ width: "75%" })}
+
+
 `;
 
 const Title = styled.h1`
@@ -29,7 +34,7 @@ const Title = styled.h1`
 `;
 
 const Form = styled.form`
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
 `;
 
@@ -46,11 +51,12 @@ const Agreement = styled.span`
 `;
 
 const Button = styled.button`
-  width: 40%;
+  width: 20%;
   border: none;
   padding: 15px 20px;
   background-color: teal;
   color: white;
+  border-radius: 50px;
   cursor: pointer;
 `;
 
@@ -74,6 +80,7 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
+        
   );
 };
 

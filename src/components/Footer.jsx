@@ -12,7 +12,8 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
-  ${mobile({ flexDirection: "column" })}
+  background-color: black ;
+  ${mobile({ flexDirection: "column"})}
 `;
 
 const Left = styled.div`
@@ -22,10 +23,13 @@ const Left = styled.div`
   padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+  color: white;
+`;
 
 const Desc = styled.p`
   margin: 20px 0px;
+  color: white;
 `;
 
 const SocialContainer = styled.div`
@@ -52,6 +56,7 @@ const Center = styled.div`
 
 const Title = styled.h3`
   margin-bottom: 30px;
+  color: white;
 `;
 
 const List = styled.ul`
@@ -65,6 +70,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
+  color: white;
 `;
 
 const Right = styled.div`
@@ -77,6 +83,7 @@ const Right = styled.div`
 const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
+  color: white;
   align-items: center;
 `;
 
@@ -88,11 +95,11 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>LAMA.</Logo>
+        <Logo>ALVINE.</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+            A vulture boards a plane carrying two dead raccoons.The flight 
+            attendant looks and says, “I´m sorry, 
+            but we only allow each passenger one carrion
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -116,6 +123,7 @@ const Footer = () => {
           <ListItem>Cart</ListItem>
           <ListItem>Man Fashion</ListItem>
           <ListItem>Woman Fashion</ListItem>
+          <ListItem>Kids Fashion</ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My Account</ListItem>
           <ListItem>Order Tracking</ListItem>
@@ -127,13 +135,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{marginRight:"10px"}}/> 622 Dixie Path , South Tobinchester 98336
+          <Room style={{marginRight:"10px"}}/> 304 Grove on the Grove , Claremont, Cape Town 7708
         </ContactItem>
         <ContactItem>
-          <Phone style={{marginRight:"10px"}}/> +1 234 56 78
+          <Phone style={{marginRight:"10px"}}/> +27 629 533 613
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{marginRight:"10px"}} /> contact@lama.dev
+          <MailOutline style={{marginRight:"10px"}} /> elvismulowayi@gmail.com
         </ContactItem>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>

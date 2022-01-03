@@ -12,6 +12,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 50px;
   ${mobile({ height: "20vh" })}
 
 `;
@@ -36,8 +37,8 @@ const Title = styled.h1`
 const Button = styled.button`
     border:none;
     padding: 10px;
-    background-color: white;
-    color:gray;
+    background-color: black;
+    color:white;
     cursor: pointer;
     font-weight: 600;
 `;
